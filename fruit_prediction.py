@@ -8,8 +8,9 @@ from sklearn import tree
 # 130g    smooth   Apple
 
 #build from the sample table data
-features = [[140,1],[130,1],[150,0],[170,0]]
-labels = ["apple", "apple","orange","orange"]
+features = [[140,1],[130,1],[150,0],[170,0]] #Input
+labels = ["apple", "apple","orange","orange"]#output
+# labels = [0, 0,1,1]#output
 
 clf = tree.DecisionTreeClassifier() #the type of classifier for supervised learning problem
 
