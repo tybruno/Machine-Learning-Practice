@@ -9,7 +9,7 @@
 
 import sys
 import scipy.io.wavfile
-# import Vokaturi
+import Vokaturi
 from Vokaturi import *
 
 sys.path.append("../api")
