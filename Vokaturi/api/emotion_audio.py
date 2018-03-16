@@ -10,17 +10,20 @@
 import sys
 import scipy.io.wavfile
 import Vokaturi
-from Vokaturi import *
+import os
 
 sys.path.append("../api")
+print(os.path.dirname(os.path.abspath(__file__)))
+print(os.path.exists("Vokaturi/api/libgcc_s_sjlj-1.dll"))
 
 
 print("Loading library...")
-Vokaturi.load("../lib/Vokaturi_mac.so")
+Vokaturi.load("Vokaturi/lib/open/win/OpenVokaturi-3-0-win64.dll")
 print("Analyzed by: %s" % Vokaturi.versionAndLicense())
 
 print("Reading sound file...")
-file_name = sys.argv[1]
+# file_name = sys.argv[1]
+file_name = "Emotion Audio/06 Fear/03-01-06-02-01-01-01.wav"
 (sample_rate, samples) = scipy.io.wavfile.read(file_name)
 print("   sample rate %.3f Hz" % sample_rate)
 
