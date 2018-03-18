@@ -43,4 +43,15 @@ def angle(z):
 
 
 def is_power2(x):
+    """
+    The Fast Fourier Transform is an efficient implementation of the DFT equation. The signal must be restricted to be of size of a power of 2.
+
+    This explains why we want N (the size of the signal in input to the DFT function) to be power of 2 and why it must be zero-padded otherwise.
+
+    We can detect whether x is a power of 2 very simply in python:
+
+
+    :param x:
+    :return:
+    """
     return x > 0 and ((x & (x - 1)) == 0)
