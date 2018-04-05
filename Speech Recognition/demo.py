@@ -3,6 +3,10 @@ import tflearn
 import speech_data
 import tensorflow as tf
 
+
+# hdf5 is not supported on this machine (please install/reinstall h5py for optimal experience)
+# curses is not supported on this machine (please install/reinstall curses for an optimal experience)
+
 #learning rate. The higher the learning rate the faster the network trains.
 # the slower the learning rate, the slower the network is trained but it is more accurate
 learning_rate = 0.0001
