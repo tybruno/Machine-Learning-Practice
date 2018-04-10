@@ -1,10 +1,7 @@
-from pyAudioAnalysis import audioBasicIO
-from pyAudioAnalysis import audioFeatureExtraction
-import matplotlib.pyplot as plt
+from pyAudioAnalysis import audioTrainTest as aT
+
+aT.featureAndTrain(["../Emotion Audio/01_Neatral", "../Emotion Audio/05_angry"], 1.0,1.0, aT.shortTermWindow, aT.shortTermStep, "svm", "model_name", False)
+aT.fileClassification("../Emotion Audio/06_Fear/03-01-06-01-01-01-01.wav", "model_name","svm")
 
 
-# [Fs, x] = audioBasicIO.readAudioFile("Emotion Audio/01 Neatral/03-01-01-01-01-01-01.wav")
-# F = audioFeatureExtraction.stFeatureExtraction(x, Fs, 0.050*Fs, 0.025*Fs)
-# plt.subplot(2,1,1); plt.plot(F[0,:]); plt.xlabel('Frame no'); plt.ylabel('ZCR')
-# plt.subplot(2,1,2); plt.plot(F[1,:]); plt.xlabel('Frame no'); plt.ylabel('Energy')
-# plt.show()
+# Result:(0.0, array([ 0.90156761,  0.09843239]), ['music', 'speech'])

@@ -29,8 +29,8 @@ print("Reading sound file...")
 # file_name = sys.argv[1]
 
 # this is the audio file that you want to evaluate
-# file_name = "Emotion Audio/06 Fear/03-01-06-01-01-01-01.wav"
-file_name = "C:\\Users\\Tyler\\PycharmProjects\\Machine-Learning-Practice\\Emotion Audio\\03 Happy\\03-01-03-01-02-01-01.wav"
+# file_name = "Emotion Audio/06_Fear/03-01-06-01-01-01-01.wav"
+file_name = "C:\\Users\\Tyler\\PycharmProjects\\Machine-Learning-Practice\\Emotion Audio\\03_Happy\\03-01-03-01-02-01-01.wav"
 (sample_rate, samples) = scipy.io.wavfile.read(file_name)
 print("   sample rate %.3f Hz" % sample_rate)
 
