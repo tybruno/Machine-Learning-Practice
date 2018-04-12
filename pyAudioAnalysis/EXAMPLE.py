@@ -1,6 +1,6 @@
 from pyAudioAnalysis import audioTrainTest as aT
 
-aT.featureAndTrain(["..\\Emotion Audio\\01_Neatral", "..\\Emotion Audio\\05_angry"], 1.0,1.0, aT.shortTermWindow, aT.shortTermStep, "svm", "emotion", False)
+aT.featureAndTrain(["..\\Emotion Audio\\01_Neatral\\16bit", "..\\Emotion Audio\\05_angry"], 1.0,1.0, aT.shortTermWindow, aT.shortTermStep, "svm", "emotion", False)
 # aT.featureAndTrain(["test1", "test2"], 1,1, aT.shortTermWindow, aT.shortTermStep, "svm", "svmSMtemp", False)
 
 print(aT.fileClassification("..\\Emotion Audio\\06_Fear\\03-01-06-01-01-01-01.wav", "emotion","svm"))
