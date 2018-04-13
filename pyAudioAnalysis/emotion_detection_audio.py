@@ -4,7 +4,7 @@ import os
 
 EMOTIONS = {"0.0": "Neutral", "1.0": "Calm", "2.0": "Happy", "3.0": "Sad", "4.0": "Angry", "6.0": "Fear",
             "7.0": "Disgust", "8.0": "Surprised"}
-EMOTIONS_LIST = {"Neutral","Calm","Happy","Sad","Angry","Fear","Disgust","Surprised"}
+EMOTIONS_LIST = ["Neutral","Calm","Happy","Sad","Angry","Fear","Disgust","Surprised"]
 from multiprocessing.pool import ThreadPool
 
 
@@ -38,19 +38,35 @@ def classify_dir(dir,trained_machine_name,trained_machine_algorithm, file_extens
     for file in location_of_files:
         print(file)
         aT.fileClassification(file,trained_machine_name,trained_machine_algorithm)
+
 def print_classification_results(dominate_emotion, emotion_statistics, emotion_paths):
     print("Dominate Emotion: "+ EMOTIONS.get(dominate_emotion.astype('str')))
 
+
+    print(emotion_statistics)
+    print(EMOTIONS_LIST)
+
     i = 0
-    for value in emotion_statistics:
+    array = []
+    map = {}
 
-        print(EMOTIONS_LIST[i] + ": " + value.astype('str'))
+    for emotion in EMOTIONS_LIST:
+        print(emotion + ": " + emotion_statistics[i].astype('str'))
+        # array[i] = emotion + ": " + emotion_statistics[i].astype('str')
+        i+=1
 
-        i+= 1
-        # print(i)
-        # print(value)
-        # print(EMOTIONS.get(str(i)) + ": " + str(value.astype('str')))
-        # i+= 1.0
+
+    # for i, j in EMOTIONS_LIST,emotion_statistics:
+    #     print(i + j)
+    # for value in emotion_statistics:
+    #
+    #     print(EMOTIONS_LIST[i] + ": " + value.astype('str'))
+    #
+    #     i+= 1
+    #     # print(i)
+    #     # print(value)
+    #     # print(EMOTIONS.get(str(i)) + ": " + str(value.astype('str')))
+    #     # i+= 1.0
 
 def main():
     EMOTIONS = {"0.0":"Neutral", "1.0":"Calm","2.0":"Happy","3.0":"Sad","4.0":"Angry","6.0":"Fear", "7.0":"Disgust","8.0":"Surprised"}
