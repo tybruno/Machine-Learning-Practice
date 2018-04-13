@@ -43,12 +43,9 @@ def print_classification_results(dominate_emotion, emotion_statistics, emotion_p
     print("Dominate Emotion: "+ EMOTIONS.get(dominate_emotion.astype('str')))
 
 
-    print(emotion_statistics)
-    print(EMOTIONS_LIST)
+
 
     i = 0
-    array = []
-    map = {}
 
     for emotion in EMOTIONS_LIST:
         print(emotion + ": " + emotion_statistics[i].astype('str'))
@@ -79,8 +76,7 @@ def main():
 
     # print(aT.fileClassification("../Emotion Audio/Testing data/Actor_22/03-01-01-01-01-01-22.wav", "emotion","svm"))
     dominate_emotion, emotion_statistics, emotion_paths=aT.fileClassification("../Emotion Audio/Testing data/Actor_22/03-01-01-01-01-01-22.wav", "emotion", "svm")
-    print(emotion_statistics)
-    print(emotion_paths)
+
     print_classification_results(dominate_emotion,emotion_statistics,emotion_paths)
 
 
