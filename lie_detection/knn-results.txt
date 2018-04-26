@@ -1,0 +1,31 @@
+trial_lie_046.wav
+File results: knn.txt
+Expected: lieDominate result: lie
+[truth,lie]
+[0.0, 1.0]
+
+trial_lie_055.wav
+File results: knn.txt
+Expected: lieDominate result: truth
+[truth,lie]
+[1.0, 0.0]
+
+trial_lie_061.wav
+File results: knn.txt
+Expected: lieDominate result: lie
+[truth,lie]
+[0.0, 1.0]
+
+trial_truth_059.wav
+File results: knn.txt
+Expected: truthDominate result: truth
+[truth,lie]
+[1.0, 0.0]
+
+trial_truth_060.wav
+File results: knn.txt
+Expected: truthDominate result: lie
+[truth,lie]
+[0.0, 1.0]
+
+Correct classifications: 3 Out of 5

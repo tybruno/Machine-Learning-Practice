@@ -1,0 +1,31 @@
+trial_lie_046.wav
+File results: extratrees.txt
+Expected: lieDominate result: lie
+[truth,lie]
+[0.302, 0.698]
+
+trial_lie_055.wav
+File results: extratrees.txt
+Expected: lieDominate result: truth
+[truth,lie]
+[0.818, 0.182]
+
+trial_lie_061.wav
+File results: extratrees.txt
+Expected: lieDominate result: truth
+[truth,lie]
+[0.504, 0.496]
+
+trial_truth_059.wav
+File results: extratrees.txt
+Expected: truthDominate result: truth
+[truth,lie]
+[0.588, 0.412]
+
+trial_truth_060.wav
+File results: extratrees.txt
+Expected: truthDominate result: lie
+[truth,lie]
+[0.316, 0.684]
+
+Correct classifications: 2 Out of 5

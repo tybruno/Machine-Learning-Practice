@@ -1,0 +1,31 @@
+trial_lie_046.wav
+File results: svm.txt
+Expected: lieDominate result: lie
+[truth,lie]
+[0.2486375967759876, 0.7513624032240123]
+
+trial_lie_055.wav
+File results: svm.txt
+Expected: lieDominate result: truth
+[truth,lie]
+[0.8833827192220944, 0.11661728077790545]
+
+trial_lie_061.wav
+File results: svm.txt
+Expected: lieDominate result: truth
+[truth,lie]
+[0.808220883537237, 0.1917791164627633]
+
+trial_truth_059.wav
+File results: svm.txt
+Expected: truthDominate result: truth
+[truth,lie]
+[0.5452425230807042, 0.4547574769192957]
+
+trial_truth_060.wav
+File results: svm.txt
+Expected: truthDominate result: lie
+[truth,lie]
+[0.4520372733471223, 0.5479627266528778]
+
+Correct classifications: 2 Out of 5

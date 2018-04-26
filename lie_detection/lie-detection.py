@@ -73,12 +73,13 @@ def classify_dir(dir,trained_machine_name,trained_machine_algorithm, file_extens
 
         dominate_result = EXPECTED.get(dominate_result)
 
+        (file,file) = file.split('\\')
+        print(file.split("_"))
         (trash, expected, trash) = file.split("_")
 
         if expected == dominate_result:
             correct += 1
 
-        (file,file) = file.split('\\')
 
         with open(trained_machine_algorithm + "-results" +".txt","a+") as f:
 

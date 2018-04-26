@@ -1,0 +1,31 @@
+trial_lie_046.wav
+File results: gradientboosting.txt
+Expected: lieDominate result: lie
+[truth,lie]
+[0.00013445637616948947, 0.9998655436238305]
+
+trial_lie_055.wav
+File results: gradientboosting.txt
+Expected: lieDominate result: truth
+[truth,lie]
+[0.9996122667453803, 0.0003877332546196806]
+
+trial_lie_061.wav
+File results: gradientboosting.txt
+Expected: lieDominate result: lie
+[truth,lie]
+[0.002949881748655847, 0.9970501182513442]
+
+trial_truth_059.wav
+File results: gradientboosting.txt
+Expected: truthDominate result: truth
+[truth,lie]
+[0.99854222560937, 0.0014577743906300158]
+
+trial_truth_060.wav
+File results: gradientboosting.txt
+Expected: truthDominate result: lie
+[truth,lie]
+[0.00029321210930455255, 0.9997067878906954]
+
+Correct classifications: 3 Out of 5

@@ -1,0 +1,31 @@
+trial_lie_046.wav
+File results: randomforest.txt
+Expected: lieDominate result: lie
+[truth,lie]
+[0.21, 0.79]
+
+trial_lie_055.wav
+File results: randomforest.txt
+Expected: lieDominate result: truth
+[truth,lie]
+[0.81, 0.19]
+
+trial_lie_061.wav
+File results: randomforest.txt
+Expected: lieDominate result: truth
+[truth,lie]
+[0.5, 0.5]
+
+trial_truth_059.wav
+File results: randomforest.txt
+Expected: truthDominate result: truth
+[truth,lie]
+[0.59, 0.41]
+
+trial_truth_060.wav
+File results: randomforest.txt
+Expected: truthDominate result: lie
+[truth,lie]
+[0.35, 0.65]
+
+Correct classifications: 2 Out of 5
